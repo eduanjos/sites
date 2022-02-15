@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*  ----------- IMPORTANDO FONTES -----------  */
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+/* -------------------------------------------- */
+
+/*  ----------- INSTÂNCIANDO FONTES -----------  */
+
+/*Título informal*/
+/*.font-dancing{font-family: 'Dancing Script', cursive;}*/
+/*Título em destaque minúsculo*/
+/*.font-indie{font-family: 'Indie Flower', cursive;}*/
+/*Texto informal*/
+/*.font-poiret{font-family: 'Poiret One', cursive;}*/
+/*Título ou texto chamativo*/
+/*.font-open{font-family: 'Open Sans', sans-serif;}*/
+/*Parágrafo*/
+/*.font-montserrat{font-family: 'Montserrat', sans-serif;}*/
+/*H3*/
+/*.font-roboto{font-family: 'Roboto', sans-serif;}*/
+/*Título maiúsculo e subtítulo minúsculo*/
+/*.font-josefin{font-family: 'Josefin Sans', sans-serif;}*/
+/* -------------------------------------------- */
+
+/*  ----------- CLASS STYLE -----------  */
+/* -------------------------------------------- */
+
+/*  ----------- TIPOGRAFIA -----------  */
+
+/* >> Fonte */
+/* >> Cor */
+/* >> Tamanho */
+
+/* -------------------------------------------- */
+
+/*  ----------- BOTÃO FLUTUANTE -----------  */
+/*.btnFloat{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+}
+.btnFloat button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white; 
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat button:focus{
+  outline: none;
+}
+.btnFloat button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #5b19b7;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+.btnFloat ul{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding:0;
+  padding-right:5px;
+  margin:0;
+  list-style:none;
+  z-index:10;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat ul li{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -10%;
+  opacity: 0;
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+.btnFloat ul li label{
+  margin-right:10px;
+  white-space: nowrap;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  border-radius:3px;
+  height: 18px;
+  font-size: 16px;
+  pointer-events: none;
+  opacity:0;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat.show button.main,
+.btnFloat.show button.main{
+  outline: none;
+  background-color: #7716ff;
+  box-shadow: 0 3px 8px rgba(0,0,0,.5);
+ }
+.btnFloat.show button.main + ul,
+.btnFloat.show button.main + ul{
+  bottom: 70px;
+}
+.btnFloat.show button.main + ul li,
+.btnFloat.show button.main + ul li{
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.btnFloat.show button.main + ul li:hover label,
+.btnFloat.show button.main + ul li:hover label{
+  opacity: 1;
+}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 320px — 480px MOBILE DEVICES -----------  */
+/*@media only screen and (min-width: 480px){
+	
+}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 481px — 768px IPADS, TABLETS -----------  */
+/*@media only screen and (min-width: 768px){
+
+}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 769px — 1024px SMALL SCREENS, LAPTOPS -----------  */
+/*@media only screen and (min-width: 1024px){
+
+}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 1025px — 1200px DESKTOPS, LARGE SCREENS -----------  */
+/*@media only screen and (min-width: 1200px){
+
+}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 1201px and more EXTRA LARGE SCREENS, TV -----------  */
+/*@media only screen and (min-width: 1400px){
+
+}*/
+/* -------------------------------------------- */
