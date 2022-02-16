@@ -1,0 +1,25 @@
+/*.card-header{background-color: #740F0F!important;}*/
+
+/*.teste{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url('../../img/site/pontus-cafe.png');
+}*/
+
+#faleconosco .card-header{background-color: #E44C03}
+#faleconosco h1{font-size: 25pt;color:#ffffff}
+
+#faleconosco h2{color: #FFC107;}
+
+#faleconosco p{/*font-size: 11pt;color: #E6E7E8;*/}
+
+#faleconosco label{font-size: 20px}
+
+/*@media only screen and (min-width: 992px){#faleconosco h2{font-size: 22pt;}#faleconosco p{font-size: 12pt;}}*/
+
+/*481px — 768px: iPads, Tablets.*/
+@media only screen and (min-width: 768px){
+	section{padding-top: 150px;padding-bottom: 150px}
+}

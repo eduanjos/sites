@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*  ----------- IMPORTANDO FONTES -----------  */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('../../font/AvenirLTW0185Heavy.woff.ttf?family=AvenirLT-85Heavy');
+/* -------------------------------------------- */
+
+/*  ----------- TIPOGRAFIA -----------  */
+h1{font-family: 'Josefin Sans', sans-serif}
+h2{font-family: 'Open Sans', sans-serif}
+h3{font-family: 'Roboto', sans-serif}
+p{font-family: 'Montserrat', sans-serif}
+.font-poiret{font-family: 'Poiret One', cursive}
+.titulo-destaque{font-family: 'AvenirLT-85Heavy', sans-serif;font-size:55px;font-weight:400;color:#1e2d3b}
+/* -------------------------------------------- */
+
+/*  ----------- PALETA DE CORES -----------  */
+/*#EA6509*/
+/* -------------------------------------------- */
+
+/*  ----------- LAYOUT -----------  */
+a{text-decoration:none!important;color:unset}
+
+a:hover{color:unset}
+
+p{text-align:justify}
+
+footer p,footer span{margin-bottom: 0px!important}
+
+.border-bottom{width:80px;height:10px;margin:0px 0px 26px 0;background-color:#EA6509}
+
+.none{display:none}
+/* -------------------------------------------- */
+
+/*  ----------- MENU SUPERIOR -----------  */
+header{z-index:9999!important;}
+
+header .navbar-superior i{font-size:25px}
+
+header nav{height:125px}
+
+header .navbar{padding:0}
+
+header .box-header{min-width:160px;height:100px;/*padding-top:10px*/}
+
+header img{height:75px}
+
+header .navbar-toggler{background:none;border:none}
+
+header .fa-bars{font-size:30px;background:none;border:none}
+
+
+
+/*header span{font-size:10pt;color:#000000}*/
+
+/*header span:nth-child(1){font-weight:bolder}*/
+/* -------------------------------------------- */
+
+/*  ----------- MEDIA SCREEN 481px — 768px IPADS, TABLETS -----------  */
+@media only screen and (min-width: 768px){
+  section{padding-top:100px;padding-bottom:100px;}
+
+  header .box-header{width: 100%; max-width:360px;height:100px}
+
+  header .menu-superior li{margin-right:70px}
+  
+  header .menu-superior a:hover{color:#EDCD1F!important}
+  
+  header .menu-superior li{margin-right:20px;/*padding-top:20px*/}
+}
+/* -------------------------------------------- */
+
+/*  ----------- MENU CANVAS -----------  */
+.overlay3 {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 3;
+      /*z-index: 999999999!important;*/
+      top: 0;
+      left:0;
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: auto;
+      overflow-x: hidden;
+      text-align: center;
+      opacity:0;
+      transition: opacity 1s;
+    }
+    body {
+      transition: background-color .5s;
+    }
+    .offcanvas {
+      height: 100%;
+      width: 0;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      position: fixed;
+      /*z-index: 3;*/
+      z-index: 999999999!important;
+      overflow-x: hidden;
+      transition: .5s;
+      padding-top: 60px;
+    }
+    .offcanvas a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none !important;
+      font-size: 25px;
+      /*color: #818181;*/
+      color: #EDCD1F;
+      display: block;
+      transition: .3s
+    }
+    .offcanvas a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+    }
+    .closeOffcanvas {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px !important;
+      margin-left: 50px;
+    }
+    #mainContent {
+      transition: margin-left .5s;
+    }
+    @media screen and (max-height: 500px) {
+      .offcanvas {padding-top:15px;}
+      .offcanvas a {font-size: 18px;}
+    }
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+/* -------------------------------------------- */
+
+/*  ----------- BOTÃO FLUTUANTE -----------  */
+.btnFloat{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+}
+.btnFloat button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat button:focus{
+  outline: none;
+}
+.btnFloat button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #5b19b7;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+.btnFloat ul{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding:0;
+  padding-right:5px;
+  margin:0;
+  list-style:none;
+  z-index:10;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat ul li{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -10%;
+  opacity: 0;
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+.btnFloat ul li label{
+  margin-right:10px;
+  white-space: nowrap;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  border-radius:3px;
+  height: 18px;
+  font-size: 16px;
+  pointer-events: none;
+  opacity:0;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btnFloat.show button.main,
+.btnFloat.show button.main{
+  outline: none;
+  background-color: #7716ff;
+  box-shadow: 0 3px 8px rgba(0,0,0,.5);
+ }
+.btnFloat.show button.main + ul,
+.btnFloat.show button.main + ul{
+  bottom: 70px;
+}
+.btnFloat.show button.main + ul li,
+.btnFloat.show button.main + ul li{
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.btnFloat.show button.main + ul li:hover label,
+.btnFloat.show button.main + ul li:hover label{
+  opacity: 1;
+}
+/* -------------------------------------------- */
