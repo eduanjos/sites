@@ -1,3 +1,126 @@
 /* CSS APLICADO COM BASE NO CONCEITO MOBILE FIRST */
 
+/*Paleta de Cores
+#ffad08
+#edd75a
+#73b06f
+#0c8f8f
+#405059
+*/
+
+
+@font-face{font-family: fontGhotic;src: url(../../font/gothic.ttf);}
+.CenturyGothic{font-family: fontGhotic;}
+
+@font-face{font-family: fontEbrimabd;src: url(../../font/ebrimabd.ttf);}
+.Ebrima{font-family: fontEbrimabd;}
+
+footer p,footer span{margin-bottom: 0px!important}
+
+li{padding-right:20px}
+
+li a{font-size:18pt;color:white!important}
+
+li a:hover{color:#A7CE45!important}
+
+button{background-color:#A7CE45!important;border-color:#A7CE45!important}
+
+.carousel-caption {
+	transform: translateY(-60%);
+	bottom: 0;
+	top: 60%;
+}
+#slide-1 {
+	background-image: url('../../img/site/slide-1-g.png');
+	height: 620px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#slide-2 {
+	background-image: url('../../img/site/slide-2-g.png');
+	height: 620px; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+figure{padding:0px;margin:0px}
+
+header h1{color:white;font-size:50pt}
+
+section h1{font-size:40pt}
+
+section#home h1{color:#ffad08;text-shadow: 2px 2px 8px #000000}
+section#home h2{color:#FFFFFF;text-shadow: 2px 2px 8px #000000}
+
+section#sobre p{color:#727376;font-size:20pt;text-align:justify}
+
+section#sobre h2{font-weight:bold;padding-top:20px}
+
+section#servicos{background-color:#2B2F52}
+
+section#servicos span{color:#E6E7E8;font-size:14pt}
+
+section#servicos i{color:#ffad08!important;}
+
+section#portfolio h2{color:#727376}
+
+section#contato{background-color:#405059}
+
+section#contato h1{color:#FFFFFF}
+
+section#contato label{color:#ffad08}
+
+section#contato i{font-size:36px;color:#ffad08}
+
+section#contato span{font-size:14pt;color:#FFFFFF}
+
+section#contato .btn-success{background-color:#A7CE45!important}
+
+footer a{color:orange;text-decoration:none!important;font-weight:bolder;}
+
+footer a:hover{color:orange}
+
+@media (max-width: 1200px){
+	header h1{font-size:30pt}
+	header h2{font-size:19pt}
+}
+@media (max-width: 992px){
+	header h1{font-size:27pt}
+	header h2{font-size:19pt}
+	section h1{font-size:35pt}
+	section#sobre p{font-size:18pt}
+}
+@media (max-width: 768px){
+	header h1{font-size:22pt}
+	header h2{font-size:14pt}
+	#slide-1 {height:520px!important}
+	#slide-2 {height:520px!important}
+	section h1{font-size:30pt}
+	section#sobre p{font-size:17pt}
+}
+@media (max-width: 576px){
+	header h1{font-size:16pt}
+	header h2{font-size:11pt}
+	#slide-1 {height:420px!important}
+	#slide-2 {height:420px!important}
+	section h1{font-size:25pt}
+	section#sobre p{font-size:15pt}
+}
+@media (max-width: 400px){
+	header h1{font-size:12pt}
+	header h2{font-size:9pt}
+	#slide-1 {height:320px!important}
+	#slide-2 {height:320px!important}
+	section h1{font-size:20pt}
+	section#sobre p{font-size:12pt}
+	section#servicos span{font-size:12pt}
+	section#contato span{font-size:12pt}
+	section#contato .col-md-6:nth-child(1) div:nth-child(2),
+	section#contato .col-md-6:nth-child(1) div:nth-child(3){margin-top: 12px!important}
+}
+
 

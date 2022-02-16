@@ -1,5 +1,5 @@
 /*  ----------- VARIÁVEIS EXTERNAS  -----------  */
-var DIRPAGE = "https://"+document.location.hostname+"/";
+// var DIRPAGE = "https://"+document.location.hostname+"/";
 /* -------------------------------------------- */
 
 /*  ----------- SCRIPTS EXTERNOS  -----------  */
@@ -40,22 +40,22 @@ $(function(){
 	/* -------------------------------------------- */
 
 	/*  ----------- BOTÃO FLUTUANTE  -----------  */
-	function toggleFAB(fab){
-		if(document.querySelector(fab).classList.contains('show')){
-			document.querySelector(fab).classList.remove('show');
-		}else{
-			document.querySelector(fab).classList.add('show');
-		}
-	}
+	// function toggleFAB(fab){
+	// 	if(document.querySelector(fab).classList.contains('show')){
+	// 		document.querySelector(fab).classList.remove('show');
+	// 	}else{
+	// 		document.querySelector(fab).classList.add('show');
+	// 	}
+	// }
 
-	document.querySelector('.btnFloat .main').addEventListener('click', function(){
-		toggleFAB('.btnFloat');
-	});
+	// document.querySelector('.btnFloat .main').addEventListener('click', function(){
+	// 	toggleFAB('.btnFloat');
+	// });
 
-	document.querySelectorAll('.btnFloat ul li button').forEach((item)=>{
-		item.addEventListener('click', function(){
-			toggleFAB('.btnFloat');
-		});
-	});
+	// document.querySelectorAll('.btnFloat ul li button').forEach((item)=>{
+	// 	item.addEventListener('click', function(){
+	// 		toggleFAB('.btnFloat');
+	// 	});
+	// });
 	/* -------------------------------------------- */
 });

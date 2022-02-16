@@ -15,24 +15,24 @@ class ClassMail {
 		$mailer->CharSet    = "utf8";
 		// $mailer->SMTPDebug = 3;
 		$mailer->IsSMTP();
-		$mailer->Host       = "";
+		$mailer->Host       = "mail.engvit.com.br";
 		$mailer->SMTPAuth   = true;
-		$mailer->Username   = "";
-		$mailer->Password   = "";
-		$mailer->SMTPSecure = "";
+		$mailer->Username   = "site@engvit.com.br";
+		$mailer->Password   = "wNwnt#ZV)DXk";
+		$mailer->SMTPSecure = "tls";
 		$mailer->Port       = 587;
-		$mailer->FromName   = "";
-		$mailer->From 	    = "";
+		$mailer->FromName   = $msg['nome-remetente'];
+		$mailer->From 	    = $msg['email-remetente'];
 		$mailer->AddAddress($msg['destinatario']);
 		$mailer->IsHTML(true);
-		$mailer->Subject    = $msg['titulo'];
+		$mailer->Subject    = $msg['assunto'];
 		$mailer->Body       = $msg['conteudo'];
 
 		if($mailer->Send()){
-
 			$this->msg("success",$msg['retorno']);
 		}else{
 			$this->msg("danger"," Mensagem não enviada.");
+			$mailer->ErrorInfo;
 		}
 	}
 }

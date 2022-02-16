@@ -3,8 +3,15 @@
 <head>
 	<!-- Título -->
 	<title><?=$this->getTitle();?></title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71302650-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-71302650-2');
+  </script>
 	<!-- Character encoding for Unicode -->
 	<meta charset="utf-8">
 	<!-- Viewport para Mobile -->
@@ -57,10 +64,8 @@
   	<!-- Icons Google -->
   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<!-- Font Awesome -->
-<!--   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- -->  	
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
   	<!-- Bibliotecas Extenas -->
   	<?=$this->addLib();?>
   	<!-- CSS Global -->

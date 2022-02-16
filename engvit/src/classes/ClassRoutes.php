@@ -19,9 +19,9 @@ class ClassRoutes{
 		$i = $url[0];
 
 		$this->rota = array(
-			""     	   		  => "ControllerSiteHome",
-			"home" 	   		  => "ControllerSiteHome",
-			"contato" 		  => "ControllerSiteContato"
+			""     	  => "ControllerSiteHome",
+			"home" 	  => "ControllerSiteHome",
+			"contato" => "ControllerSiteContato"
 		);
 
 		#Verifica se a URL está contida nas rotas pré definidas

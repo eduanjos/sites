@@ -14,10 +14,10 @@ class ControllerSiteContato {
 		
 		if (empty($this->getUrl()[1])) {
 
-			$this->setTitle("Fale Conosco | NOME-DO-SITE");
-			$this->setSiteName("NOME-DO-SITE");
+			$this->setTitle("Fale Conosco | ENGVIT");
+			$this->setSiteName("Engvit Construções");
 			$this->setOgType("website");
-			$this->setFbAdmins("PAGINA-FACEBOOK");
+			$this->setFbAdmins("engvit");
 			$this->setDescription("Central de Relacionamentos com Clientes.Sua Opinião é Importante para que o nosso Atendimento Evolua Constantemente.");
 			$this->setKeywords("Fale Conosco, Central de Relacionamento, SAC");
 			$this->setAuthor("EP Criação");
@@ -52,37 +52,56 @@ class ControllerSiteContato {
 	}
 
 	public function mail(){
-		#Valida Form
-		$this->setNome(trim($_GET['nome']));
-		$this->setTel(trim($_GET['tel']));
-		$this->setEmail(trim($_GET['mail']));
+
+		#nome
+		if(empty(trim($_GET['nome']))){
+			
+			$this->msg("warning","Favor informar o nome para contato.");
+			exit();
+		}else{
+			$this->setNome(trim($_GET['nome']));
+		}
+		
+		$this->setTel(trim($_GET['fone']));
+
+		#email
+		if(empty(trim($_GET['email']))){
+			
+			$this->msg("warning","Favor informar o e-mail para contato.");
+			exit();
+		}else{
+			$this->setEmail(trim($_GET['email']));
+		}
+		
 		$this->setMensagem(trim($_GET['msg']));
 
-		if ($this->getTel()=='' && $this->getEmail()=='') {
+		if($this->getTel()=='' && $this->getEmail()==''){
 
 			$this->msg("warning","Favor informar o Telefone ou E-mail para contato.");
 			exit();
 		}
 
 		#Monta Layout
-		$tag =  "<h1>Formulário do Site</h1>";
-		$tag .= "<p><strong>Nome: </strong>".$this->getNome()."</p>";
-		$tag .= "<p><strong>Telefone: </strong><a href='tel.:".$this->getTel()."'>".$this->getTel()."</a></p>";
-		$tag .= "<p><strong>E-mail: </strong>".$this->getEmail()."</p>";
-		$tag .= "<p><strong>Mensagem: </strong>".$this->getMensagem()."</p>";
+		$html =  "<h1>Formulário do Site</h1>";
+		$html .= "<p><strong>Nome: </strong>".$this->getNome()."</p>";
+		$html .= "<p><strong>Telefone: </strong><a href='tel.:".$this->getTel()."'>".$this->getTel()."</a></p>";
+		$html .= "<p><strong>E-mail: </strong>".$this->getEmail()."</p>";
+		$html .= "<p><strong>Mensagem: </strong>".$this->getMensagem()."</p>";
 
-		$this->setLayout($tag);
-
-		#Envia E-mail
+		$this->setLayout($html);
+		
 		$mail = new ClassMail();
 
 		$mensagem = array(
-			"destinatario" => 'EMAIL_DA_EMPRESA',
-			"titulo"       => "Fale Conosco",
-			"retorno"      => "Mensagem enviada com sucesso. Entraremos em contato em breve.",
-			"conteudo"     => $this->getLayout()
+			"nome-remetente"  => $this->getNome(),
+			"email-remetente" => $this->getEmail(),
+			"destinatario"    => 'locatrix.obras@gmail.com',
+			"assunto"         => "Engvit Construções",
+			"retorno"         => "Mensagem enviada com sucesso. Entraremos em contato em breve.",
+			"conteudo"        => $this->getLayout()
 		);
 
+		// print_r($mensagem);
 		$mail->enviar($mensagem);
 	}
 }
