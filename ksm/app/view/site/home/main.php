@@ -1,7 +1,7 @@
 <main>
 	<section id="apresentacao" class="d-flex justify-content-center flex-column align-items-center">
 		
-		<h1 class="d-flex justify-content-center text-white wow fadeIn" data-wow-duration="2s">
+		<h1 class="d-flex justify-content-center wow fadeIn" data-wow-duration="2s">
 			SOLUÇÕES SUSTENTÁVEIS EM OBRAS
 		</h1>
 		
@@ -21,8 +21,8 @@
 					<source srcset="<?=DIRIMG?>site/servico-1.webp" type="image/webp">
 					<img src="<?=DIRIMG.'site/servico-1.jpg'?>" alt="Planejamento de Pré Construção">
 				</picture>
-				<h3 class="text-center">Planejamento de Pré Construção</h3>
-				<p class="text-justify pl-2 pr-2">Sou um parágrafo. Edite e adicione o seu próprio texto. É fácil! Basta editar texto e adicionar o seu conteúdo e trocar fontes.</p>
+				<h3 class="text-center">Fábrica</h3>
+				<p class="text-justify pl-2 pr-2">O patio de fabricação da KSM possui 300m² de area, contendo um conjunto das melhores maquinas e equipamentos do mercado, gerando uma produção media mensal é 45 mil tijolos.</p>
 			</div>
 			<div class="col-md">
 				<div>
@@ -31,8 +31,8 @@
 						<img class="img-fluid" src="<?=DIRIMG.'site/servico-2.jpg'?>" alt="Modelo Arquitetônico">
 					</picture>
 				</div>
-				<h3 class="text-center">Modelo Arquitetônico</h3>
-				<p class="text-justify pl-2 pr-2">Sou um parágrafo. Edite e adicione o seu próprio texto. É fácil! Basta editar texto e adicionar o seu conteúdo e trocar fontes.</p>
+				<h3 class="text-center">Projetos Executivos</h3>
+				<p class="text-justify pl-2 pr-2">O setor de projetos da KSM possui uma equipe de profissionais especializados para a elaboraçao de projetos especificos para  construções em tijolos ecologicos.</p>
 			</div>
 			<div class="col-md">
 				<div>
@@ -41,8 +41,8 @@
 						<img class="img-fluid" src="<?=DIRIMG.'site/servico-3.jpg'?>" alt="Gestão da Constução">
 					</picture>
 				</div>
-				<h3 class="text-center">Gestão da Constução</h3>
-				<p class="text-justify pl-2 pr-2">Sou um parágrafo. Edite e adicione o seu próprio texto. É fácil! Basta editar texto e adicionar o seu conteúdo e trocar fontes.</p>
+				<h3 class="text-center">Obras Executas</h3>
+				<p class="text-justify pl-2 pr-2">A equipe de obras da KSM possui treinametos especializados para a execução eficiente das obras, garatindo qualidade, economia e rapidez na construção.</p>
 			</div>
 		</div>
 	</section>
@@ -50,7 +50,7 @@
 		<div class="row">
 			<div class="col-md d-flex flex-row-reverse">
 				<div class="box">
-					<img class="img-fluid" src="<?=DIRIMG.'site/quem-somos.jpg'?>">
+					<img class="img-fluid" src="<?=DIRIMG.'site/quem-somos.png'?>">
 					<h2 class="text-center titulo-destaque">QUEM SOMOS</h2>
 					<div class="d-flex justify-content-center">
 						<div class="border-bottom"></div>
@@ -68,32 +68,32 @@
 	<section class="info-metrica container-fluid">
 		<div class="row">
 			<div class="col-6 col-md text-center">
-				<h3>2023</h3>
+				<h3>2019</h3>
 				<h4>Ano</h4>
 				<h4>Fundado</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>206</h3>
-				<h4>Projetos </h4>
-				<h4>Completos</h4>
+				<h3>R$107.562,42</h3>
+				<h4>Em Projetos Executivos</h4>
+				<h4>2021/2022</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>870</h3>
-				<h4>Empreiteiros </h4>
-				<h4>Contratados</h4>
+				<h3>250.000</h3>
+				<h4>Unidades Fabricadas</h4>
+				<h4>12/2021</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>26</h3>
-				<h4>Prêmios</h4>
-				<h4>Recebidos</h4>
+				<h3>R$50.000</h3>
+				<h4>Em Serviços</h4>
+				<h4>Prestados</h4>
 			</div>
 		</div>
 	</section>
 	<section id="section-projetos" class="container">
-		<h2 class="text-center titulo-destaque">PROJETOS</h2>
+		<h2 class="text-center titulo-destaque">OBRAS EXECUTADAS</h2>
 		<div class="d-flex justify-content-center">
 			<div class="border-bottom"></div>
 		</div>
@@ -197,7 +197,7 @@
 					<address>
 						<p>Cariacica - ES</p>
 						<p>Morada de Santa Fé</p>
-						<p>Rua Campos, nº87, ES 29173-074</p>
+						<p>Rua Campos, nº87, ES 29143-661</p>
 					</address>
 
 					<h3>Rede Social</h3>
@@ -218,7 +218,7 @@
 					<h3>Atendimento</h3>
 					<address>
 						<p>De segunda à sexta</p>
-						<p>De 9 às 18hr.</p>
+						<p>De 07:30 às 17:30hs.</p>
 					</address>
 				</div>
 			</div>
@@ -240,6 +240,12 @@
 				</a>
 				<a href="#section-projetos" onclick="closeOffcanvas()">
 					<span class="link-canvas">PROJETOS</span>
+				</a>
+				<a href="<?=DIRPAGE.'modelos'?>" onclick="closeOffcanvas()">
+					<span class="link-canvas">MODELOS</span>
+				</a>
+				<a href="<?=DIRPAGE.'acabamento'?>" onclick="closeOffcanvas()">
+					<span class="link-canvas">ACABAMENTO</span>
 				</a>
 				<a href="#section-contato" onclick="closeOffcanvas()">
 					<span class="link-canvas">CONTATO</span>
