@@ -1,5 +1,5 @@
 <main>
-	<section id="apresentacao" class="d-flex justify-content-center flex-column align-items-center">
+	<!-- <section id="banner" class="d-flex justify-content-center flex-column align-items-center">
 		
 		<h1 class="d-flex justify-content-center wow fadeIn" data-wow-duration="2s">
 			SOLUÇÕES SUSTENTÁVEIS EM OBRAS
@@ -9,6 +9,12 @@
 			TIJOLOS ECOLÓGICOS
 		</h2>
 
+	</section> -->
+	<section id="banner" class="d-flex align-items-center bg-light" style="height:500px">
+		<div class="mx-auto pl-2 pr-2 wow fadeIn" style="margin-top:200px">
+			<h1 class="text-center">SOLUÇÕES SUSTENTÁVEIS EM OBRAS</h1>
+			<h2 class="text-center">TIJOLOS ECOLÓGICOS</h2>
+		</div>
 	</section>
 	<section id="section-servico" class="container">
 		<h2 class="text-center titulo-destaque">SERVIÇOS</h2>
@@ -224,50 +230,4 @@
 			</div>
 		</div>
 	</section>
-	<div style="padding-top: 0px;">
-		<div id="mainContent">
-			<div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()" style="width: 0%; opacity: 0;"></div>
-			<div id="myOffcanvas" class="offcanvas" style="width: 0%;">
-				<a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">×</a>
-				<a href="#section-video" onclick="closeOffcanvas()">
-					<span class="link-canvas">HOME</span>
-				</a>
-				<a href="#section-servico" onclick="closeOffcanvas()">
-					<span class="link-canvas">SERVIÇOS</span>
-				</a>
-				<a href="#section-quem-somos" onclick="closeOffcanvas()">
-					<span class="link-canvas">QUEM SOMOS</span>
-				</a>
-				<a href="#section-projetos" onclick="closeOffcanvas()">
-					<span class="link-canvas">PROJETOS</span>
-				</a>
-				<a href="<?=DIRPAGE.'modelos'?>" onclick="closeOffcanvas()">
-					<span class="link-canvas">MODELOS</span>
-				</a>
-				<a href="<?=DIRPAGE.'acabamento'?>" onclick="closeOffcanvas()">
-					<span class="link-canvas">ACABAMENTO</span>
-				</a>
-				<a href="#section-contato" onclick="closeOffcanvas()">
-					<span class="link-canvas">CONTATO</span>
-				</a>
-			</div>
-			<script>
-				function openOffcanvas() {
-					document.getElementById("myOffcanvas").style.width = "250px";
-					document.getElementById("mainContent").style.marginLeft = "250px";
-				}
-				function openNav3() {
-					document.getElementById("myCanvasNav").style.width = "100%";
-					document.getElementById("myCanvasNav").style.opacity = "0.8";  
-				}
-				function closeOffcanvas() {
-					document.getElementById("myOffcanvas").style.width = "0%";
-					document.getElementById("mainContent").style.marginLeft= "0%";
-					document.body.style.backgroundColor = "white";
-					document.getElementById("myCanvasNav").style.width = "0%";
-					document.getElementById("myCanvasNav").style.opacity = "0"; 
-				}
-			</script>
-		</div>
-	</div>
 </main>

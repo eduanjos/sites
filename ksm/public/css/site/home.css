@@ -1,29 +1,39 @@
-/*  ----------- SECTION APRESENTACAO -----------  */
-#apresentacao h1{font-size:6vh;margin-top:100px;}
-
-#apresentacao h2{font-size:6vh}
-
-#apresentacao{
+/*  ----------- SECTION BANNER -----------  */
+/*#banner{
   width:100%;
-  /*height:100vh;*/
   height:500px;
   background-image:url('../../img/site/background.png');
   background-size: cover;
+}*/
+/* Modernizr Webp */
+.webp #banner{
+  width: 100%;
+  height:500px;
+  background-image:url('../../img/site/background.webp');
+  background-size: cover;
 }
-#apresentacao h1{
-  /*text-shadow: -1px -1px 1px rgba(255,255,255,.1),
-  1px 1px 1px rgba(0,0,0,.5), 
-  -4px 3px 3px rgba(0,0,0,0.61);*/
+.no-webp #banner{
+  background-image:url('../../img/site/background.png');
+}
+/* Fim Modernizr Webp */
+#banner h1{
+  font-size:3vh;
   color:#FFFFFF;text-shadow: 2px 2px 8px #000000
 }
-#apresentacao h2{color:#EA6509;text-shadow: 2px 2px 8px #000000}
+
+#banner h2{
+  font-size:3vh;
+  color:#EA6509;
+  text-shadow: 2px 2px 8px #000000;
+}
 /* -------------------------------------------- */
 
 /*  ----------- SECTION SERVICO -----------  */
+#section-servico h2{font-size:4vh}
+
+#section-servico h3{font-size:3vh;padding-top:20px}
 
 #section-servico .col-md{margin-top:20px!important}
-
-#section-servico h3{padding-top: 20px}
 
 #section-servico img{width:100%;height:227px}
 
@@ -33,9 +43,7 @@
 /*  ----------- SECTION QUEM SOMOS -----------  */
 #section-quem-somos{padding-top:0px}
 
-#section-quem-somos h2{margin-top:20px}
-
-/*#section-quem-somos .col-md:nth-child(1){margin-bottom:10px}*/
+#section-quem-somos h2{font-size:4vh;margin-top:20px}
 
 #section-quem-somos .col-md:nth-child(1){background-color:#F7F7F7}
 
@@ -45,57 +53,59 @@
   width: 100%;
   background: url('../../img/site/quem-somos.webp');
   background-attachment: fixed;
-
   background-size: 50% 100%;
 }
 /* -------------------------------------------- */
 
 /*  ----------- INFO METRICA -----------  */
-.info-metrica{padding-top:0px;background-color:#EDCD1F;color:#3D5975}
+.info-metrica h3{font-size:3vh}
 
-/*.info-metrica h2{padding-top:20px}*/
+.info-metrica h4{font-size:3vh}
+
+.info-metrica{padding-top:0px;background-color:#EDCD1F;color:#3D5975}
 
 .info-metrica .col-6{padding-top:100px}
 /* -------------------------------------------- */
 
 /*  ----------- SECTION PROJETOS -----------  */
 /*Efeito de imagem*/
-/*#section-projetos .box {position: relative;width:70%;}*/
-#section-projetos .box {position: relative;width:100%;/*margin: auto;*/}
+#section-projetos h2{font-size:4vh}
+
+#section-projetos .box {position:relative;width:100%;/*margin: auto;*/}
 
 #section-projetos .row,
 #section-projetos .col-md:nth-child(2),
 #section-projetos .col-md:nth-child(4){margin-top:20px!important}
 
-#section-projetos .image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
+#section-projetos .image{
+  opacity:1;
+  display:block;
+  width:100%;
+  height:auto;
   transition: .5s ease;
-  backface-visibility: hidden;
+  backface-visibility:hidden;
 }
 
-.middle {
+.middle{
   transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  opacity:0;
+  position:absolute;
+  top:50%;
+  left:50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align:center;
 }
 
-#section-projetos .box:hover .image {opacity: 0.3}
+#section-projetos .box:hover .image{opacity:0.3}
 
-#section-projetos .box:hover .middle {opacity: 1}
+#section-projetos .box:hover .middle{opacity:1}
 
-#section-projetos .text {
-  border-radius: 25px;
-  background-color: #000000;
-  color: white;
-  font-size: 16px;
+#section-projetos .text{
+  border-radius:25px;
+  background-color:#000000;
+  color:white;
+  font-size:16px;
   padding: 16px 32px;
 }
 
@@ -104,7 +114,7 @@
 /* -------------------------------------------- */
 
 /*  ----------- SECTION CONTATO -----------  */
-/*#section-contato{padding-bottom:0px!important}*/
+#section-contato h2{font-size:4vh}
 
 #section-contato{background-color:#F7F7F7}
 
@@ -113,13 +123,9 @@
 #section-contato .btn-enviar{width:100%}
 
 #section-contato i{font-size:20px}
-
-/*#section-contato{padding-bottom:unset}*/
 /* -------------------------------------------- */
 
-
 /*  ################## VIEW MOBILE ####################  */
-
 
 /*  ----------- MEDIA SCREEN 320px — 480px MOBILE DEVICES -----------  */
 /*@media only screen and (min-width: 480px){
@@ -127,9 +133,16 @@
 /* -------------------------------------------- */
 
 /*  ----------- MEDIA SCREEN 481px — 768px IPADS, TABLETS -----------  */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width:768px){
+  #banner h1{font-size:5vh}
+
+  #banner h2{font-size:4vh}
+
+  #section-servico h2{font-size:5vh}
 
   #section-servico .col-md{margin-top:0px!important}
+
+  #section-quem-somos h2{font-size:5vh}
 
   #section-quem-somos{padding-bottom:0px!important}
 
@@ -137,15 +150,25 @@
 
   #section-quem-somos .col-md:nth-child(1) .box{width:425px;margin-right:30px}
 
-  .info-metrica{padding-top:50px;padding-bottom: 50px}
+  .info-metrica h3{font-size:3vh}
+
+  .info-metrica h4{font-size:3vh}
+
+  .info-metrica{padding-top:50px;padding-bottom:50px}
 
   .info-metrica .col-6{padding-top:0px}
 
   .info-metrica .verticalLine{border-left: 2px solid #FFFFFF}
 
+  #section-projetos h2{font-size:5vh}
+
   #section-projetos .row,
   #section-projetos .col-md:nth-child(2),
   #section-projetos .col-md:nth-child(4){margin-top:0px!important}
+
+  #section-contato h2{font-size:5vh}
+
+  #section-contato h3{font-size:3vh}
 
   #section-projetos .padding{padding-top:30px;padding-bottom:30px}
 

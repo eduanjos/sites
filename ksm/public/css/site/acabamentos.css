@@ -1,25 +1,23 @@
-#banner{
+/*#banner{
   width:100%;
   height:500px;
   background-image:url('../../img/site/background.png');
   background-size: cover;
   
-}
+}*/
 
 /* Modernizr Webp */
-/*.webp #banner{
+.webp #banner{
 	width: 100%;
-   	height:100vh;
+   	height:500px;
  	background-image:url('../../img/site/background.webp');
   	background-size: cover;
 }
 .no-webp #banner{
 	background-image:url('../../img/site/background.png');
-}*/
+}
 /* Fim Modernizr Webp */
 
-#banner h1{font-size:6vh;margin-top:100px}
+#banner h1{font-size:6vh;color:#FFFFFF;text-shadow: 2px 2px 8px #000000}
 
 #grade h2{font-size:2vh;margin-top:70px}
-
-/*#grade h3{font-size:1vh}*/

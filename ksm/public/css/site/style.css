@@ -22,6 +22,8 @@ p{font-family: 'Montserrat', sans-serif}
 /* -------------------------------------------- */
 
 /*  ----------- LAYOUT -----------  */
+section{padding-top:100px;padding-bottom:100px;}
+
 a{text-decoration:none!important;color:unset}
 
 a:hover{color:unset}
@@ -51,17 +53,11 @@ header img{height:75px}
 header .navbar-toggler{background:none;border:none}
 
 header .fa-bars{font-size:30px;background:none;border:none}
-
-
-
-/*header span{font-size:10pt;color:#000000}*/
-
-/*header span:nth-child(1){font-weight:bolder}*/
 /* -------------------------------------------- */
 
 /*  ----------- MEDIA SCREEN 481px — 768px IPADS, TABLETS -----------  */
 @media only screen and (min-width: 768px){
-  section{padding-top:100px;padding-bottom:100px;}
+  section{padding-top:150px;padding-bottom:150px;}
 
   header .box-header{width: 100%; max-width:360px;height:100px}
 
@@ -75,66 +71,66 @@ header .fa-bars{font-size:30px;background:none;border:none}
 
 /*  ----------- MENU CANVAS -----------  */
 .overlay3 {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 3;
-      /*z-index: 999999999!important;*/
-      top: 0;
-      left:0;
-      background-color: rgba(0,0,0, 0.9);
-      overflow-y: auto;
-      overflow-x: hidden;
-      text-align: center;
-      opacity:0;
-      transition: opacity 1s;
-    }
-    body {
-      transition: background-color .5s;
-    }
-    .offcanvas {
-      height: 100%;
-      width: 0;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      position: fixed;
-      /*z-index: 3;*/
-      z-index: 999999999!important;
-      overflow-x: hidden;
-      transition: .5s;
-      padding-top: 60px;
-    }
-    .offcanvas a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none !important;
-      font-size: 25px;
-      /*color: #818181;*/
-      color: #EDCD1F;
-      display: block;
-      transition: .3s
-    }
-    .offcanvas a:hover, .offcanvas a:focus{
-      color: #f1f1f1;
-    }
-    .closeOffcanvas {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px !important;
-      margin-left: 50px;
-    }
-    #mainContent {
-      transition: margin-left .5s;
-    }
-    @media screen and (max-height: 500px) {
-      .offcanvas {padding-top:15px;}
-      .offcanvas a {font-size: 18px;}
-    }
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  /*z-index: 999999999!important;*/
+  top: 0;
+  left:0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity:0;
+  transition: opacity 1s;
+}
+body {
+  transition: background-color .5s;
+}
+.offcanvas {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  position: fixed;
+  /*z-index: 3;*/
+  z-index: 999999999!important;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 60px;
+}
+.offcanvas a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none !important;
+  font-size: 25px;
+  /*color: #818181;*/
+  color: #EDCD1F;
+  display: block;
+  transition: .3s
+}
+.offcanvas a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+.closeOffcanvas {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+#mainContent {
+  transition: margin-left .5s;
+}
+@media screen and (max-height: 500px) {
+  .offcanvas {padding-top:15px;}
+  .offcanvas a {font-size: 18px;}
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 /* -------------------------------------------- */
 
 /*  ----------- BOTÃO FLUTUANTE -----------  */

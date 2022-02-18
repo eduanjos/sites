@@ -1,0 +1,1 @@
+<script src="<?=DIRLIB.'modernizr-custom.js'?>"></script>

@@ -1,8 +1,8 @@
 <main>
-	<section id="banner" class="d-flex justify-content-center flex-column align-items-center">
-		<h1 class="d-flex justify-content-center text-white wow fadeIn" data-wow-duration="2s">
-			ACABAMENTOS
-		</h1>
+	<section id="banner" class="d-flex align-items-center bg-light" style="height:500px">
+		<div class="mx-auto pl-2 pr-2 wow fadeIn" style="margin-top:200px">
+			<h1 class="text-center">ACABAMENTOS</h1>
+		</div>
 	</section>
 	<section id="grade" class="container-fluid">
 		<div class="row">

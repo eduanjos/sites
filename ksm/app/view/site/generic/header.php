@@ -38,10 +38,10 @@
 					<a class="nav-link" href="<?=DIRPAGE?>#section-projetos">PROJETOS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">MODELOS</a>
+					<a class="nav-link" href="<?=DIRPAGE.'modelos'?>">MODELOS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?=DIRPAGE.'acabamentos'?>">ACABAMENTO</a>
+					<a class="nav-link" href="<?=DIRPAGE.'acabamentos'?>">ACABAMENTOS</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?=DIRPAGE?>#section-contato">CONTATO</a>
@@ -50,3 +50,49 @@
 		</div>
 	</nav>
 </header>
+<div style="padding-top: 0px;">
+	<div id="mainContent">
+		<div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()" style="width: 0%; opacity: 0;"></div>
+		<div id="myOffcanvas" class="offcanvas" style="width: 0%;">
+			<a href="javascript:void(0)" class="closeOffcanvas" onclick="closeOffcanvas()">×</a>
+			<a href="<?=DIRPAGE?>" onclick="closeOffcanvas()">
+				<span class="link-canvas">HOME</span>
+			</a>
+			<a href="<?=DIRPAGE?>#section-servico" onclick="closeOffcanvas()">
+				<span class="link-canvas">SERVIÇOS</span>
+			</a>
+			<a href="<?=DIRPAGE?>#section-quem-somos" onclick="closeOffcanvas()">
+				<span class="link-canvas">QUEM SOMOS</span>
+			</a>
+			<a href="<?=DIRPAGE?>#section-projetos" onclick="closeOffcanvas()">
+				<span class="link-canvas">PROJETOS</span>
+			</a>
+			<a href="<?=DIRPAGE.'modelos'?>" onclick="closeOffcanvas()">
+				<span class="link-canvas">MODELOS</span>
+			</a>
+			<a href="<?=DIRPAGE.'acabamentos'?>" onclick="closeOffcanvas()">
+				<span class="link-canvas">ACABAMENTOS</span>
+			</a>
+			<a href="<?=DIRPAGE?>#section-contato" onclick="closeOffcanvas()">
+				<span class="link-canvas">CONTATO</span>
+			</a>
+		</div>
+		<script>
+			function openOffcanvas() {
+				document.getElementById("myOffcanvas").style.width = "250px";
+				document.getElementById("mainContent").style.marginLeft = "250px";
+			}
+			function openNav3() {
+				document.getElementById("myCanvasNav").style.width = "100%";
+				document.getElementById("myCanvasNav").style.opacity = "0.8";  
+			}
+			function closeOffcanvas() {
+				document.getElementById("myOffcanvas").style.width = "0%";
+				document.getElementById("mainContent").style.marginLeft= "0%";
+				document.body.style.backgroundColor = "white";
+				document.getElementById("myCanvasNav").style.width = "0%";
+				document.getElementById("myCanvasNav").style.opacity = "0"; 
+			}
+		</script>
+	</div>
+</div>
