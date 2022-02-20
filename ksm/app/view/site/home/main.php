@@ -1,19 +1,23 @@
 <main>
-	<!-- <section id="banner" class="d-flex justify-content-center flex-column align-items-center">
-		
-		<h1 class="d-flex justify-content-center wow fadeIn" data-wow-duration="2s">
-			SOLUÇÕES SUSTENTÁVEIS EM OBRAS
-		</h1>
-		
-		<h2 class="d-flex justify-content-center mt-4">
-			TIJOLOS ECOLÓGICOS
-		</h2>
-
-	</section> -->
-	<section id="banner" class="d-flex align-items-center bg-light" style="height:500px">
+	<!-- <section id="banner" class="d-flex align-items-center bg-light" style="height:500px">
 		<div class="mx-auto pl-2 pr-2 wow fadeIn" style="margin-top:200px">
 			<h1 class="text-center">SOLUÇÕES SUSTENTÁVEIS EM OBRAS</h1>
 			<h2 class="text-center">TIJOLOS ECOLÓGICOS</h2>
+		</div>
+	</section> -->
+	<section id="section-video">
+		<div class="overlay"></div>
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+			<source src="<?=DIRVIDEO.'site/background.mov'?>" type="video/mp4">
+		</video>
+		<div class="container h-100">
+			<div class="d-flex h-100 text-center align-items-center">
+				<div class="w-100">
+					<h1 class="display-3 wow backInDown" data-wow-duration="2s">SOLUÇÕES SUSTENTÁVEIS EM OBRAS</h1>
+					<h2 class="display-3 wow fadeIn" data-wow-duration="3s">Tijolos Ecológicos</h2>
+					<a href="https://api.whatsapp.com/send?phone=5527988780451" class="btn btn-danger wow pulse" data-wow-duration="2s" data-wow-iteration="infinite">Solicite agora mesmo</a>
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="section-servico" class="container">
@@ -74,90 +78,74 @@
 	<section class="info-metrica container-fluid">
 		<div class="row">
 			<div class="col-6 col-md text-center">
-				<h3>2019</h3>
+				<h3><strong>2019</strong></h3>
 				<h4>Ano</h4>
 				<h4>Fundado</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>R$107.562,42</h3>
-				<h4>Em Projetos Executivos</h4>
+				<h3><strong>R$107.562</strong></h3>
+				<h4>Projetos Executivos</h4>
 				<h4>2021/2022</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>250.000</h3>
+				<h3><strong>250.000</strong></h3>
 				<h4>Unidades Fabricadas</h4>
 				<h4>12/2021</h4>
 			</div>
 			<div class="verticalLine"></div>
 			<div class="col-6 col-md text-center">
-				<h3>R$50.000</h3>
-				<h4>Em Serviços</h4>
+				<h3><strong>R$505,497</strong></h3>
+				<h4>Serviços</h4>
 				<h4>Prestados</h4>
 			</div>
 		</div>
 	</section>
-	<section id="section-projetos" class="container">
+	<section id="section-obras" class="container">
 		<h2 class="text-center titulo-destaque">OBRAS EXECUTADAS</h2>
 		<div class="d-flex justify-content-center">
 			<div class="border-bottom"></div>
 		</div>
 		<div class="row">
-			<div class="col-md d-flex flex-row-reverse">
-				<div class="box">
-					<a href="#">
-						<picture title="Projeto 1">
-							<source srcset="<?=DIRIMG.'site/projeto-1.webp'?>" type="image/webp">
-							<img class="img-fluid image" src="<?=DIRIMG.'site/projeto-1.png'?>" alt="Projeto 1" style="width: 100%;">
-						</picture>
-					</a>
-					<div class="middle">
-					<div class="text">Projeto 1</div>
-					</div>
-				</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 1">
+					<source srcset="<?=DIRIMG.'site/projeto-1.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-1.png'?>" alt="Projeto 1" style="width: 50%;">
+				</picture>
 			</div>
-			<div class="col-md">
-				<div class="box">
-					<a href="#">
-						<picture title="Projeto 2">
-							<source srcset="<?=DIRIMG.'site/projeto-2.webp'?>" type="image/webp">
-							<img class="image" src="<?=DIRIMG.'site/projeto-2.png'?>" alt="Projeto 2" style="width: 100%;">
-						</picture>
-					</a>
-					<div class="middle">
-						<div class="text">Projeto 2</div>
-					</div>
-				</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 2">
+					<source srcset="<?=DIRIMG.'site/projeto-2.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-2.png'?>" alt="Projeto 2" style="width: 50%;">
+				</picture>
+			</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 3">
+					<source srcset="<?=DIRIMG.'site/projeto-3.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-3.png'?>" alt="Projeto 3" style="width: 50%;">
+				</picture>
 			</div>
 		</div>
-		<div class="padding"></div>
+		<!-- <div class="padding"></div> -->
 		<div class="row">
-			<div class="col-md d-flex flex-row-reverse">
-				<div class="box">
-					<a href="#">
-						<picture title="Projeto 3">
-							<source srcset="<?=DIRIMG.'site/projeto-3.webp'?>" type="image/webp">
-							<img class="image" src="<?=DIRIMG.'site/projeto-3.png'?>" alt="Projeto 3" style="width: 100%;">
-						</picture>
-					</a>
-					<div class="middle">
-						<div class="text">Projeto 3</div>
-					</div>
-				</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 4">
+					<source srcset="<?=DIRIMG.'site/projeto-4.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-4.png'?>" alt="Projeto 4" style="width: 50%;">
+				</picture>
 			</div>
-			<div class="col-md">
-				<div class="box">
-					<a href="#">
-						<picture title="Projeto 3">
-							<source srcset="<?=DIRIMG.'site/projeto-4.webp'?>" type="image/webp">
-							<img class="image" src="<?=DIRIMG.'site/projeto-4.png'?>" alt="Projeto 4" style="width: 100%;">
-						</picture>
-					</a>
-					<div class="middle">
-						<div class="text">Projeto 4</div>
-					</div>
-				</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 5">
+					<source srcset="<?=DIRIMG.'site/projeto-5.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-5.png'?>" alt="Projeto 5" style="width: 50%;">
+				</picture>
+			</div>
+			<div class="col-md mt-3">
+				<picture title="Projeto 6">
+					<source srcset="<?=DIRIMG.'site/projeto-6.webp'?>" type="image/webp">
+					<img class="rounded mx-auto d-block" src="<?=DIRIMG.'site/projeto-6.png'?>" alt="Projeto 6" style="width: 50%;">
+				</picture>
 			</div>
 		</div>
 	</section>

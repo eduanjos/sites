@@ -12,7 +12,7 @@
 h1{font-family: 'Josefin Sans', sans-serif}
 h2{font-family: 'Open Sans', sans-serif}
 h3{font-family: 'Roboto', sans-serif}
-p{font-family: 'Montserrat', sans-serif}
+h4,p{font-family: 'Montserrat', sans-serif}
 .font-poiret{font-family: 'Poiret One', cursive}
 .titulo-destaque{font-family: 'AvenirLT-85Heavy', sans-serif;font-size:55px;font-weight:400;color:#1e2d3b}
 /* -------------------------------------------- */

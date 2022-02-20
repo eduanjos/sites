@@ -1,3 +1,44 @@
+/*  ----------- SECTION VIDEO -----------  */
+#section-video h1{font-size:6vw;margin-top:200px;color:#FFFFFF;text-shadow: 2px 2px 8px #000000}
+#section-video h2{font-size:5vw;margin-top:30px;color:#EA6509;text-shadow: 2px 2px 8px #000000}
+#section-video .btn-danger{margin-top:20px}
+#section-video {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+#section-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#section-video .container {
+  position: relative;
+  z-index: 2;
+}
+#section-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+/* -------------------------------------------- */
 /*  ----------- SECTION BANNER -----------  */
 /*#banner{
   width:100%;
@@ -62,22 +103,24 @@
 
 .info-metrica h4{font-size:3vh}
 
-.info-metrica{padding-top:0px;background-color:#EDCD1F;color:#3D5975}
+/*.info-metrica{padding-top:0px;}*/
 
-.info-metrica .col-6{padding-top:100px}
+.info-metrica{padding-top:50px;padding-bottom:50px;background-color:#EDCD1F;color:#3D5975}
+
+.info-metrica .col-6{padding-top:30px}
 /* -------------------------------------------- */
 
 /*  ----------- SECTION PROJETOS -----------  */
 /*Efeito de imagem*/
-#section-projetos h2{font-size:4vh}
+#section-obras h2{font-size:4vh}
+/*
+#section-obras .box {position:relative;width:100%;}
 
-#section-projetos .box {position:relative;width:100%;/*margin: auto;*/}
+#section-obras .row,
+#section-obras .col-md:nth-child(2),
+#section-obras .col-md:nth-child(4){margin-top:20px!important}
 
-#section-projetos .row,
-#section-projetos .col-md:nth-child(2),
-#section-projetos .col-md:nth-child(4){margin-top:20px!important}
-
-#section-projetos .image{
+#section-obras .image{
   opacity:1;
   display:block;
   width:100%;
@@ -97,20 +140,18 @@
   text-align:center;
 }
 
-#section-projetos .box:hover .image{opacity:0.3}
+#section-obras .box:hover .image{opacity:0.3}
 
-#section-projetos .box:hover .middle{opacity:1}
+#section-obras .box:hover .middle{opacity:1}
 
-#section-projetos .text{
+#section-obras .text{
   border-radius:25px;
   background-color:#000000;
   color:white;
   font-size:16px;
   padding: 16px 32px;
-}
-
+}*/
 /*Efeito de imagem*/
-/*#section-projetos .padding{padding-top:30px;padding-bottom:30px}*/
 /* -------------------------------------------- */
 
 /*  ----------- SECTION CONTATO -----------  */
@@ -134,9 +175,13 @@
 
 /*  ----------- MEDIA SCREEN 481px — 768px IPADS, TABLETS -----------  */
 @media only screen and (min-width:768px){
-  #banner h1{font-size:5vh}
+  #section-video h1{font-size:3vw!important;}
 
-  #banner h2{font-size:4vh}
+  #section-video h2{font-size:2vw!important;}
+  
+  /*#banner h1{font-size:5vh}
+
+  #banner h2{font-size:4vh}*/
 
   #section-servico h2{font-size:5vh}
 
@@ -156,21 +201,15 @@
 
   .info-metrica{padding-top:50px;padding-bottom:50px}
 
-  .info-metrica .col-6{padding-top:0px}
-
   .info-metrica .verticalLine{border-left: 2px solid #FFFFFF}
 
-  #section-projetos h2{font-size:5vh}
-
-  #section-projetos .row,
-  #section-projetos .col-md:nth-child(2),
-  #section-projetos .col-md:nth-child(4){margin-top:0px!important}
+  #section-obras h2{font-size:5vh}
 
   #section-contato h2{font-size:5vh}
 
   #section-contato h3{font-size:3vh}
 
-  #section-projetos .padding{padding-top:30px;padding-bottom:30px}
+  #section-obras .padding{padding-top:30px;padding-bottom:30px}
 
   #section-contato .btn-enviar{width:unset}
 }

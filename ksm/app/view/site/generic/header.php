@@ -35,14 +35,14 @@
 					<a class="nav-link" href="<?=DIRPAGE?>#section-quem-somos" style="white-space:nowrap">QUEM SOMOS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?=DIRPAGE?>#section-projetos">PROJETOS</a>
+					<a class="nav-link" href="<?=DIRPAGE?>#section-obras">OBRAS EXECUTADAS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?=DIRPAGE.'modelos'?>">MODELOS</a>
+					<a class="nav-link" href="<?=DIRPAGE.'projetos-executivos'?>">PROJETOS EXECUTIVOS</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?=DIRPAGE.'acabamentos'?>">ACABAMENTOS</a>
-				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="<?//=DIRPAGE.'acabamentos'?>">ACABAMENTOS</a>
+				</li> -->
 				<li class="nav-item">
 					<a class="nav-link" href="<?=DIRPAGE?>#section-contato">CONTATO</a>
 				</li>
@@ -64,15 +64,15 @@
 			<a href="<?=DIRPAGE?>#section-quem-somos" onclick="closeOffcanvas()">
 				<span class="link-canvas">QUEM SOMOS</span>
 			</a>
-			<a href="<?=DIRPAGE?>#section-projetos" onclick="closeOffcanvas()">
-				<span class="link-canvas">PROJETOS</span>
+			<a href="<?=DIRPAGE?>#section-obras" onclick="closeOffcanvas()">
+				<span class="link-canvas">OBRAS EXECUTADAS</span>
 			</a>
-			<a href="<?=DIRPAGE.'modelos'?>" onclick="closeOffcanvas()">
-				<span class="link-canvas">MODELOS</span>
+			<a href="<?=DIRPAGE.'projetos-executivos'?>" onclick="closeOffcanvas()">
+				<span class="link-canvas">PROJETOS EXECUTIVOS</span>
 			</a>
-			<a href="<?=DIRPAGE.'acabamentos'?>" onclick="closeOffcanvas()">
+			<!-- <a href="<?//=DIRPAGE.'acabamentos'?>" onclick="closeOffcanvas()">
 				<span class="link-canvas">ACABAMENTOS</span>
-			</a>
+			</a> -->
 			<a href="<?=DIRPAGE?>#section-contato" onclick="closeOffcanvas()">
 				<span class="link-canvas">CONTATO</span>
 			</a>
